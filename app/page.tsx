@@ -1,141 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { projects, skills } from "@/src";
 import Link from "next/link";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("home");
-
-  const projects = [
-    {
-      id: 1,
-      title: "BlockBeat",
-      description:
-        "A comprehensive blockchain analytics and monitoring platform providing real-time insights into blockchain networks and market trends.",
-      tech: ["Next.js", "React", "Web3", "TypeScript"],
-      link: "https://www.blockbeat.io",
-    },
-    {
-      id: 2,
-      title: "GetRoasted",
-      description:
-        "An AI-powered platform leveraging machine learning to provide intelligent feedback and analysis with personalized user experiences.",
-      tech: ["React", "TypeScript", "OpenAI API", "LangChain"],
-      link: "https://www.getroasted.ai",
-    },
-    {
-      id: 3,
-      title: "Health Triage System",
-      description:
-        "Masters project: An intelligent healthcare triage system using ML to assess patient urgency and optimize resource allocation. Full-stack with AI integration.",
-      tech: [
-        "Next.js",
-        "React",
-        "Node.js",
-        "Express",
-        "TypeScript",
-        "Supabase",
-        "OpenAI API",
-      ],
-      link: "https://health-triage-fe.vercel.app",
-    },
-  ];
-
-  const skills = [
-    {
-      category: "Programming",
-      items: ["JavaScript", "TypeScript", "Python"],
-    },
-    {
-      category: "Frontend",
-      items: [
-        "HTML",
-        "CSS",
-        "React",
-        "Next.js",
-        "Tailwind CSS",
-        "React Query",
-        "Highcharts",
-        "AG Grid",
-        "Jest",
-        "Vitest",
-      ],
-    },
-    {
-      category: "Backend & APIs",
-      items: [
-        "Node.js",
-        "REST APIs",
-        "Supabase",
-        "PostgreSQL",
-        "MongoDB",
-        "Mongoose",
-        "Serverless",
-        "AWS Lambda",
-        "DynamoDB",
-        "Redis",
-        "Elasticsearch",
-      ],
-    },
-    {
-      category: "ML & AI",
-      items: [
-        "TensorFlow",
-        "PyTorch",
-        "scikit-learn",
-        "NumPy",
-        "Neural Networks",
-        "LangChain",
-      ],
-    },
-    {
-      category: "Data Visualization",
-      items: ["Matplotlib", "Seaborn", "Highcharts"],
-    },
-    {
-      category: "DevOps & Cloud",
-      items: [
-        "Docker",
-        "Kubernetes",
-        "Git",
-        "GitHub",
-        "Google Cloud Platform",
-        "Heroku",
-      ],
-    },
-    {
-      category: "Analytics",
-      items: ["Mixpanel", "Google Analytics", "Vercel Analytics"],
-    },
-    {
-      category: "Tools",
-      items: [
-        "Jupyter Notebook",
-        "Google Colab",
-        "Streamlit",
-        "Webpack",
-        "Yarn",
-        "Figma",
-        "Slack",
-      ],
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-purple-500/20">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+          <div className="text-2xl font-bold bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
             Victor
           </div>
           <div className="hidden md:flex gap-8">
             {[
-              { label: "Home", href: "#" },
-              { label: "About", href: "#about" },
+              { label: "Home", href: "/" },
+              { label: "About", href: "/#about" },
               { label: "Projects", href: "/projects" },
-              { label: "Skills", href: "#skills" },
-              { label: "Contact", href: "#contact" },
+              { label: "Skills", href: "/#skills" },
+              { label: "Contact", href: "/#contact" },
             ].map((item) => (
               <Link
                 key={item.label}
@@ -158,7 +41,7 @@ export default function Home() {
           </div>
           <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
             Building Beautiful
-            <span className="block bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               Digital Experiences
             </span>
           </h1>
@@ -170,7 +53,7 @@ export default function Home() {
           <div className="flex gap-6 justify-center flex-wrap">
             <Link
               href="/projects"
-              className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all"
+              className="px-8 py-3 bg-linear-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all"
             >
               View All Projects
             </Link>
@@ -181,7 +64,7 @@ export default function Home() {
         </div>
       </section>{" "}
       {/* About Section */}
-      <section className="py-20 px-6 bg-slate-900/50">
+      <section id="about" className="py-20 px-6 bg-slate-900/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">About Me</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -209,7 +92,7 @@ export default function Home() {
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 p-8 rounded-lg border border-purple-500/30 text-center"
+                  className="bg-linear-to-br from-purple-500/20 to-pink-500/20 p-8 rounded-lg border border-purple-500/30 text-center"
                 >
                   <div className="text-3xl font-bold text-purple-400 mb-2">
                     {stat.number}
@@ -222,7 +105,7 @@ export default function Home() {
         </div>
       </section>
       {/* Projects Section */}
-      <section className="py-20 px-6">
+      <section id="projects" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
             Featured Projects
@@ -231,9 +114,9 @@ export default function Home() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300"
+                className="group relative bg-linear-to-br from-slate-800 to-slate-900 rounded-lg overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 to-pink-600/0 group-hover:from-purple-600/10 group-hover:to-pink-600/10 transition-all" />
+                <div className="absolute inset-0 bg-linear-to-r from-purple-600/0 to-pink-600/0 group-hover:from-purple-600/10 group-hover:to-pink-600/10 transition-all" />
                 <div className="relative p-8">
                   <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
                   <p className="text-gray-400 mb-6">{project.description}</p>
@@ -262,7 +145,7 @@ export default function Home() {
         </div>
       </section>
       {/* Skills Section */}
-      <section className="py-20 px-6 bg-slate-900/50" id="skills">
+      <section id="skills" className="py-20 px-6 bg-slate-900/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
             Skills & Expertise
@@ -271,7 +154,7 @@ export default function Home() {
             {skills.map((skillGroup) => (
               <div
                 key={skillGroup.category}
-                className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-lg p-6"
+                className="bg-linear-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-lg p-6"
               >
                 <h3 className="text-lg font-bold mb-4 text-purple-400">
                   {skillGroup.category}
@@ -279,7 +162,7 @@ export default function Home() {
                 <div className="space-y-2">
                   {skillGroup.items.map((skill) => (
                     <div key={skill} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full" />
+                      <div className="w-1.5 h-1.5 bg-linear-to-r from-purple-400 to-pink-600 rounded-full" />
                       <span className="text-sm text-gray-300">{skill}</span>
                     </div>
                   ))}
@@ -302,7 +185,7 @@ export default function Home() {
           <div className="flex gap-6 justify-center flex-wrap">
             <a
               href="mailto:adelekeafolayan@gmail.com"
-              className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all"
+              className="px-8 py-3 bg-linear-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all"
             >
               Send me an Email
             </a>

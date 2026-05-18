@@ -36,7 +36,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
     >
-      <body className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <body className="bg-linear-to-br from-slate-900 via-purple-900 to-slate-900">
         {children}
       </body>
     </html>
