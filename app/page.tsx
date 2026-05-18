@@ -180,7 +180,6 @@ export default function Home() {
           </div>
         </div>
       </section>{" "}
-      id="about"
       {/* About Section */}
       <section className="py-20 px-6 bg-slate-900/50">
         <div className="max-w-6xl mx-auto">
@@ -302,19 +301,23 @@ export default function Home() {
           </p>
           <div className="flex gap-6 justify-center flex-wrap">
             <a
-              href="mailto:your@email.com"
+              href="mailto:adelekeafolayan@gmail.com"
               className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all"
             >
               Send me an Email
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/victor-adeleke-afolayan/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3 border border-purple-400 rounded-lg font-semibold hover:bg-purple-500/10 transition-all"
             >
               LinkedIn
             </a>
             <a
-              href="#"
+              href="https://github.com/rephidimC"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3 border border-purple-400 rounded-lg font-semibold hover:bg-purple-500/10 transition-all"
             >
               GitHub
@@ -325,7 +328,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-purple-500/20 py-8 px-6 bg-slate-900/50">
         <div className="max-w-6xl mx-auto text-center text-gray-400">
-          <p>© 2026 Victor Adeleke. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Victor Adeleke. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>

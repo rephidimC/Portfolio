@@ -282,27 +282,178 @@ export default function ProjectsPage() {
         </div>
       </section>
 
+      {/* Work Experience Section */}
+      <section className="py-20 px-6 bg-slate-900/50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center text-purple-300">Work Experience</h2>
+          <div className="space-y-8">
+            {
+              [
+                {
+                  title: "Fullstack Engineer",
+                  company: "Graceland Psychiatry",
+                  location: "TX, USA",
+                  period: "2025 - 2026",
+                  link: "https://www.gracelandpsychiatry.com",
+                  description: "Designed and developed a professional healthcare platform featuring appointment scheduling, patient portal, and medical information resources. Built responsive UI components with modern design patterns.",
+                  tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase"],
+                },
+                {
+                  title: "Fullstack Engineer",
+                  company: "Kupa",
+                  location: "NY, USA",
+                  period: "2025",
+                  link: "https://kupa.ai",
+                  description: "Developed AI-powered platform with machine learning integration. Built backend APIs and frontend UI for intelligent feedback systems.",
+                  tech: ["React", "Node.js", "OpenAI API", "TypeScript", "Tailwind CSS"],
+                },
+                {
+                  title: "Fullstack Engineer",
+                  company: "BlockBeat",
+                  location: "Miami, USA",
+                  period: "2022 - 2025",
+                  link: "https://www.blockbeat.io",
+                  description: "Built comprehensive blockchain analytics platform providing real-time insights into networks and transactions. Implemented Web3 integrations and data visualization dashboards.",
+                  tech: ["Next.js", "React", "Web3", "TypeScript", "Highcharts", "Node.js"],
+                },
+                {
+                  title: "Fullstack Engineer",
+                  company: "Signal",
+                  location: "California, USA",
+                  period: "2022",
+                  description: "Developed full-stack applications with focus on performance optimization and scalability. Implemented secure authentication and real-time data synchronization.",
+                  tech: ["React", "Node.js", "PostgreSQL", "TypeScript"],
+                },
+                {
+                  title: "Fullstack Engineer",
+                  company: "Point Blank Dev",
+                  location: "Chicago, USA",
+                  period: "2021 - 2022",
+                  link: "https://www.pointblankdev.com",
+                  description: "Delivered client solutions across various industries. Built custom web applications with focus on user experience and code quality.",
+                  tech: ["React", "Node.js", "JavaScript", "MongoDB", "Tailwind CSS"],
+                },
+              ].map((job, idx) => (
+                <div key={idx} className="bg-gradient-to-br from-slate-800 to-slate-900 border border-purple-500/20 rounded-lg p-8 hover:border-purple-500/50 transition-all">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                    <div>
+                      <h3 className="text-2xl font-bold text-purple-300">{job.title}</h3>
+                      <a
+                        href={job.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg text-gray-300 hover:text-purple-400 transition-colors"
+                      >
+                        {job.company}
+                      </a>
+                    </div>
+                    <span className="text-sm text-gray-400 md:text-right mt-2 md:mt-0">
+                      {job.period} • {job.location}
+                    </span>
+                  </div>
+                  <p className="text-gray-300 mb-4 leading-relaxed">{job.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {job.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-purple-500/20 border border-purple-500/40 rounded-full text-sm text-purple-300"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center text-purple-300">Education</h2>
+          <div className="grid md:grid-cols-1 gap-8">
+            {
+              [
+                {
+                  degree: "Master of Science in Software Engineering (MSSE)",
+                  school: "Quantic School of Business and Technology",
+                  location: "Washington DC, USA",
+                  period: "2025 - 2026",
+                },
+                {
+                  degree: "Master of Business Administration (MBA)",
+                  school: "Quantic School of Business and Technology",
+                  location: "Washington DC, USA",
+                  period: "2024 - 2025",
+                },
+                {
+                  degree: "Bachelor of Engineering (BEng) in Mechanical Engineering",
+                  school: "University of Ilorin",
+                  location: "Ilorin, Nigeria",
+                  period: "2012 - 2017",
+                },
+              ].map((edu, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-lg p-8"
+                >
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div>
+                      <h3 className="text-2xl font-bold text-purple-300 mb-2">{edu.degree}</h3>
+                      <p className="text-lg text-gray-300 mb-1">{edu.school}</p>
+                      <p className="text-gray-400">{edu.location}</p>
+                    </div>
+                    <span className="text-sm font-semibold text-purple-300 mt-4 md:mt-0 md:whitespace-nowrap">
+                      {edu.period}
+                    </span>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto text-center bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-lg p-12">
-          <h2 className="text-3xl font-bold mb-4">Impressed?</h2>
+          <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Let's collaborate on your next amazing project. I'm always excited
-            to work on challenging and innovative ideas.
+            I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
           </p>
-          <a
-            href="mailto:your@email.com"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all"
-          >
-            Get in Touch
-          </a>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <a
+              href="mailto:adelekeafolayan@gmail.com"
+              className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all"
+            >
+              Email Me
+            </a>
+            <a
+              href="https://www.linkedin.com/in/victor-adeleke-afolayan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 border border-purple-400 rounded-lg font-semibold hover:bg-purple-500/10 transition-all"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/rephidimC"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 border border-purple-400 rounded-lg font-semibold hover:bg-purple-500/10 transition-all"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-purple-500/20 py-8 px-6 bg-slate-900/50">
         <div className="max-w-6xl mx-auto text-center text-gray-400">
-          <p>© 2026 Victor Adeleke. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Victor Adeleke. All rights reserved.</p>
         </div>
       </footer>
     </div>
