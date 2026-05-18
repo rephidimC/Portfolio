@@ -38,15 +38,13 @@ export default function ProjectsPage() {
     },
     {
       id: 3,
-      title: "ItsBaba",
+      title: "baba",
       description:
-        "A full-featured e-commerce and marketplace platform with user authentication, product management, and secure payment integration.",
+        "A language learning and translation platform transforming how people connect across languages, starting with Hebrew. Captures cultural nuances, gender dynamics, and real-world usage to help users communicate naturally and authentically in business, social, and personal contexts.",
       tech: [
         "Next.js",
         "React",
-        "Node.js",
-        "MongoDB",
-        "Stripe",
+        "TypeScript",
         "Tailwind CSS",
       ],
       link: "https://www.itsbaba.com",
@@ -61,8 +59,6 @@ export default function ProjectsPage() {
         "Next.js",
         "React",
         "TypeScript",
-        "Supabase",
-        "PostgreSQL",
         "Tailwind CSS",
       ],
       link: "https://www.gracelandpsychiatry.com",
@@ -73,7 +69,7 @@ export default function ProjectsPage() {
       title: "Mastermind Recovery",
       description:
         "A comprehensive recovery and wellness platform designed to support patients with treatment information, resources, and community engagement.",
-      tech: ["Next.js", "React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       link: "https://www.mastermindrecovery.org",
       type: "Client Project",
     },
@@ -88,15 +84,14 @@ export default function ProjectsPage() {
     },
     {
       id: 7,
-      title: "Landtana",
+      title: "Lantana Crown Braids",
       description:
-        "A real estate and property management platform with advanced filtering, property listings, and user-friendly search capabilities.",
+        "San Antonio's premier destination for professional braiding services. A beautifully designed salon website showcasing braid styles, booking system, and the salon's commitment to celebrating natural hair and providing exceptional service in a welcoming environment.",
       tech: [
         "Next.js",
         "React",
         "Node.js",
         "PostgreSQL",
-        "Google Maps API",
         "Tailwind CSS",
       ],
       link: "https://www.landtana.com",
