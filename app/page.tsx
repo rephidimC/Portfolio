@@ -27,8 +27,16 @@ export default function Home() {
       id: 3,
       title: "Health Triage System",
       description:
-        "Masters project: An intelligent healthcare triage system using ML to assess patient urgency and optimize resource allocation.",
-      tech: ["React", "Python", "TensorFlow", "PostgreSQL"],
+        "Masters project: An intelligent healthcare triage system using ML to assess patient urgency and optimize resource allocation. Full-stack with AI integration.",
+      tech: [
+        "Next.js",
+        "React",
+        "Node.js",
+        "Express",
+        "TypeScript",
+        "Supabase",
+        "OpenAI API",
+      ],
       link: "https://health-triage-fe.vercel.app",
     },
   ];

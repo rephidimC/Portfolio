@@ -107,14 +107,21 @@ export default function ProjectsPage() {
       title: "Health Triage System",
       description:
         "Masters project: An AI-enhanced mental health triage and care management system that combines patient intake, risk assessment (LLM + PHQ-9), and clinician workflows. The platform enables prioritization of high-risk patients, supports scheduling, and provides explainable AI insights with audit logging.",
-      tech: [
+      frontendTech: [
+        "Next.js",
         "React",
         "TypeScript",
-        "Python",
-        "TensorFlow",
-        "Node.js",
-        "PostgreSQL",
         "Tailwind CSS",
+        "React Query",
+        "Vercel Analytics",
+      ],
+      backendTech: [
+        "Node.js",
+        "Express",
+        "TypeScript",
+        "Supabase",
+        "OpenAI API",
+        "PostgreSQL",
       ],
       link: "https://health-triage-fe.vercel.app",
       type: "Masters Project",
@@ -176,25 +183,50 @@ export default function ProjectsPage() {
                   An intelligent healthcare triage system using machine learning
                   to assess patient urgency and optimize resource allocation in
                   medical settings. This project demonstrates advanced ML
-                  integration with modern web technologies.
+                  integration with modern web technologies across full-stack
+                  development.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {[
-                    "React",
-                    "TypeScript",
-                    "Python",
-                    "TensorFlow",
-                    "Node.js",
-                    "PostgreSQL",
-                    "Tailwind CSS",
-                  ].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 bg-purple-500/30 border border-purple-400/50 rounded-full text-sm text-purple-200"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="mb-8">
+                  <h4 className="text-sm font-semibold text-purple-300 mb-3">
+                    Frontend Technologies
+                  </h4>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {[
+                      "Next.js",
+                      "React",
+                      "TypeScript",
+                      "Tailwind CSS",
+                      "React Query",
+                      "Vercel Analytics",
+                    ].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-blue-500/30 border border-blue-400/50 rounded-full text-sm text-blue-200"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <h4 className="text-sm font-semibold text-purple-300 mb-3">
+                    Backend Technologies
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Node.js",
+                      "Express",
+                      "TypeScript",
+                      "Supabase",
+                      "OpenAI API",
+                      "PostgreSQL",
+                    ].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-green-500/30 border border-green-400/50 rounded-full text-sm text-green-200"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 <a
                   href="https://health-triage-fe.vercel.app"
