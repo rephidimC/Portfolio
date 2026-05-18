@@ -120,7 +120,7 @@ export default function ProjectsPage() {
                         {project.description}
                       </p>
                       <div className="flex flex-wrap gap-2 mb-6">
-                        {project.tech.map((tech) => (
+                        {project.tech?.map((tech) => (
                           <span
                             key={tech}
                             className="px-3 py-1 bg-purple-500/20 border border-purple-500/40 rounded-full text-sm text-purple-300"
