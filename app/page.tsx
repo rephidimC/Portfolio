@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
             Building Beautiful
-            <span className="block bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent">
               Digital Experiences
             </span>
           </h1>
@@ -31,7 +31,7 @@ export default function Home() {
           <div className="flex gap-6 justify-center flex-wrap">
             <Link
               href="/projects"
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all"
+              className="px-8 py-3 bg-linear-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all"
             >
               View All Projects
             </Link>
@@ -44,7 +44,7 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="py-20 px-6 bg-gradient-to-br from-blue-50 to-blue-100"
+        className="py-20 px-6 bg-linear-to-br from-blue-50 to-blue-100"
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">About Me</h2>
@@ -73,7 +73,7 @@ export default function Home() {
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 p-8 rounded-lg border border-blue-500/30 text-center"
+                  className="bg-linear-to-br from-blue-500/20 to-blue-600/20 p-8 rounded-lg border border-blue-500/30 text-center"
                 >
                   <div className="text-3xl font-bold text-blue-600 mb-2">
                     {stat.number}
@@ -97,7 +97,7 @@ export default function Home() {
                 key={project.id}
                 className="group relative bg-white rounded-lg overflow-hidden border border-blue-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-blue-700/0 group-hover:from-blue-50/50 group-hover:to-blue-100/50 transition-all" />
+                <div className="absolute inset-0 bg-linear-to-r from-blue-600/0 to-blue-700/0 group-hover:from-blue-50/50 group-hover:to-blue-100/50 transition-all" />
                 <div className="relative p-8">
                   <h3 className="text-2xl font-bold mb-3 text-gray-900">
                     {project.title}
@@ -137,7 +137,7 @@ export default function Home() {
             {skills.map((skillGroup) => (
               <div
                 key={skillGroup.category}
-                className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-6"
+                className="bg-linear-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-6"
               >
                 <h3 className="text-lg font-bold mb-4 text-blue-700">
                   {skillGroup.category}
@@ -145,7 +145,7 @@ export default function Home() {
                 <div className="space-y-2">
                   {skillGroup.items.map((skill) => (
                     <div key={skill} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full" />
+                      <div className="w-1.5 h-1.5 bg-linear-to-r from-blue-400 to-blue-600 rounded-full" />
                       <span className="text-sm text-gray-700">{skill}</span>
                     </div>
                   ))}
@@ -168,7 +168,7 @@ export default function Home() {
           <div className="flex gap-6 justify-center flex-wrap">
             <a
               href="mailto:adelekeafolayan@gmail.com"
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-400/50 transition-all"
+              className="px-8 py-3 bg-linear-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-400/50 transition-all"
             >
               Send me an Email
             </a>

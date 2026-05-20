@@ -78,7 +78,7 @@ export default function BlogPostPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-300 rounded-lg p-8 mb-8">
+          <div className="bg-linear-to-r from-blue-50 to-blue-100 border border-blue-300 rounded-lg p-8 mb-8">
             <h3 className="text-2xl font-bold mb-4">Want to discuss this?</h3>
             <p className="text-gray-300 mb-6">
               Have thoughts on scalability or want to share your own
@@ -86,7 +86,7 @@ export default function BlogPostPage() {
             </p>
             <a
               href="mailto:adelekeafolayan@gmail.com"
-              className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-400/50 transition-all"
+              className="inline-block px-6 py-3 bg-linear-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-400/50 transition-all"
             >
               Send me an Email
             </a>
