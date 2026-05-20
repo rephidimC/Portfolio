@@ -35,11 +35,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-purple-200">
+    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-blue-200">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+          className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
         >
           Victor
         </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
             >
               {item.label}
             </Link>

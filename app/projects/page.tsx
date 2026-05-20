@@ -28,13 +28,13 @@ export default function ProjectsPage() {
             <h2 className="text-3xl font-bold mb-8 text-blue-700">
               Academic Achievement
             </h2>
-            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 border-2 border-blue-300 rounded-lg overflow-hidden hover:border-blue-400 transition-all duration-300">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-300 rounded-lg overflow-hidden hover:border-blue-400 transition-all duration-300">
               <div className="p-8">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-3xl font-bold text-gray-900">
                     Health Triage System
                   </h3>
-                  <span className="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-sm font-semibold text-white">
+                  <span className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full text-sm font-semibold text-white">
                     Masters Project
                   </span>
                 </div>
@@ -73,7 +73,7 @@ export default function ProjectsPage() {
                   href="https://health-triage-fe.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-300/50 transition-all"
+                  className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-400/50 transition-all"
                 >
                   Visit Project →
                 </a>
@@ -94,7 +94,7 @@ export default function ProjectsPage() {
                     key={project.id}
                     className="group relative bg-white rounded-lg overflow-hidden border border-blue-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-cyan-600/0 group-hover:from-blue-50/50 group-hover:to-cyan-50/50 transition-all" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-blue-700/0 group-hover:from-blue-50/50 group-hover:to-blue-100/50 transition-all" />
                     <div className="relative p-8 h-full flex flex-col">
                       <h3 className="text-2xl font-bold mb-3 text-gray-900">
                         {project.title}
@@ -129,7 +129,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Work Experience Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-cyan-50">
+      <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-blue-100">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-blue-700">
             Work Experience
@@ -187,7 +187,7 @@ export default function ProjectsPage() {
             {education.map((edu, idx) => (
               <div
                 key={idx}
-                className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 border border-blue-500/30 rounded-lg p-8"
+                className="bg-gradient-to-br from-blue-600/20 to-blue-700/20 border border-blue-500/30 rounded-lg p-8"
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                   <div>
@@ -209,7 +209,7 @@ export default function ProjectsPage() {
 
       {/* CTA Section */}
       <section className="py-16 px-6 bg-white">
-        <div className="max-w-3xl mx-auto text-center bg-gradient-to-r from-blue-100 to-cyan-100 border border-blue-300 rounded-lg p-12">
+        <div className="max-w-3xl mx-auto text-center bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-300 rounded-lg p-12">
           <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
           <p className="text-xl text-gray-300 mb-8">
             I'm always interested in hearing about new projects and
@@ -218,7 +218,7 @@ export default function ProjectsPage() {
           <div className="flex gap-4 justify-center flex-wrap">
             <a
               href="mailto:adelekeafolayan@gmail.com"
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-300/50 transition-all"
+              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-400/50 transition-all"
             >
               Email Me
             </a>

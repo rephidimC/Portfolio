@@ -108,12 +108,12 @@ export default function BlogPage() {
 
       {/* CTA Section */}
       <section className="py-16 px-6">
-        <div className="max-w-3xl mx-auto text-center bg-gradient-to-r from-blue-100 to-cyan-100 border border-blue-300 rounded-lg p-12">
+        <div className="max-w-3xl mx-auto text-center bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-300 rounded-lg p-12">
           <h2 className="text-3xl font-bold mb-4">Want to stay updated?</h2>
           <p className="text-xl text-gray-300 mb-8">
             Subscribe to get the latest articles delivered to your inbox.
           </p>
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-300/50 transition-all">
+          <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-400/50 transition-all">
             Subscribe
           </button>
         </div>
