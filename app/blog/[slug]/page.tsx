@@ -88,7 +88,7 @@ export default function BlogPostPage() {
               href="mailto:adelekeafolayan@gmail.com"
               className="inline-block px-6 py-3 bg-linear-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-400/50 transition-all"
             >
-              Send me an Email
+              Email Me
             </a>
           </div>
 
