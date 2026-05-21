@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     description: "Building beautiful digital experiences",
     type: "website",
     emails: ["adelekeafolayan@gmail.com"],
+    images: [
+      "https://res.cloudinary.com/dzcwsxuvc/image/upload/v1779364773/IMG_0233_wqt1vv.png",
+    ],
   },
 };
 
