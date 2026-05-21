@@ -60,10 +60,10 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-6">
               {[
-                { number: "50+", label: "Projects Completed" },
-                { number: "40+", label: "Happy Clients" },
+                { number: "Numerous", label: "Projects Completed" },
+                { number: "Countless", label: "Happy Clients" },
                 { number: "5+", label: "Years Experience" },
-                { number: "100%", label: "Satisfaction Rate" },
+                { number: "Forever", label: "Building" },
               ].map((stat) => (
                 <div
                   key={stat.label}
