@@ -7,7 +7,6 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* Navigation */}
       <Navbar />
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
