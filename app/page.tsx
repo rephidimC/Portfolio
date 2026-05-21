@@ -16,7 +16,7 @@ export default function Home() {
               Welcome to my portfolio
             </span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Building Beautiful
             <span className="block bg-linear-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent">
               Digital Experiences
