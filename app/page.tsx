@@ -28,19 +28,14 @@ export default function Home() {
             elegant solutions to complex problems. Let me help bring your vision
             to life.
           </p>
-          <div className="flex gap-6 justify-center flex-wrap">
-            <Link
-              href="/projects"
-              className="px-8 py-3 bg-linear-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all"
-            >
-              View All Projects
-            </Link>
-            <button className="px-8 py-3 border border-blue-400 rounded-lg font-semibold text-blue-600 hover:bg-blue-50 transition-all">
-              Get in Touch
-            </button>
-          </div>
+          <Link
+            href="/projects"
+            className="px-8 py-3 bg-linear-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all"
+          >
+            View All Projects
+          </Link>
         </div>
-      </section>{" "}
+      </section>
       {/* About Section */}
       <section
         id="about"
