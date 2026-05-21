@@ -85,7 +85,7 @@ export default function BlogPage() {
                   </Link>
                 </div>
               </div>
-              <p className="text-gray-400 mb-4 leading-relaxed">
+              <p className="text-gray-600 mb-4 leading-relaxed">
                 {post.excerpt}
               </p>
               <div className="flex flex-wrap gap-4 items-center justify-between">

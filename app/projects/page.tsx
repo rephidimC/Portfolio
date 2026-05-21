@@ -1,7 +1,6 @@
 "use client";
 
 import { allProjects, education, mastersProject, workExperience } from "@/src";
-import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 
 export default function ProjectsPage() {
@@ -14,7 +13,7 @@ export default function ProjectsPage() {
       <section className="pt-32 pb-12 px-6">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">All Projects</h1>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-gray-600">
             A showcase of my work across various technologies and industries
           </p>
         </div>
@@ -49,7 +48,7 @@ export default function ProjectsPage() {
                     {mastersProject.frontendTech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-blue-100 border border-blue-300 rounded-full text-sm text-blue-700"
+                        className="px-3 py-1 bg-white border border-blue-300 rounded-full text-sm text-blue-700"
                       >
                         {tech}
                       </span>
@@ -62,7 +61,7 @@ export default function ProjectsPage() {
                     {mastersProject.backendTech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-green-500/30 border border-green-400/50 rounded-full text-sm text-green-200"
+                        className="px-3 py-1 bg-white border border-blue-300 rounded-full text-sm text-blue-700"
                       >
                         {tech}
                       </span>
@@ -154,18 +153,18 @@ export default function ProjectsPage() {
                       {job.company}
                     </a>
                   </div>
-                  <span className="text-sm text-gray-400 md:text-right mt-2 md:mt-0">
+                  <span className="text-sm text-gray-600 md:text-right mt-2 md:mt-0">
                     {job.period} • {job.location}
                   </span>
                 </div>
-                <p className="text-gray-300 mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-4 leading-relaxed">
                   {job.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {job.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-blue-500/20 border border-blue-500/40 rounded-full text-sm text-blue-300"
+                      className="px-3 py-1 bg-blue-500/20 border border-blue-500/40 rounded-full text-sm text-blue-700"
                     >
                       {tech}
                     </span>
@@ -180,24 +179,24 @@ export default function ProjectsPage() {
       {/* Education Section */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-blue-300">
+          <h2 className="text-4xl font-bold mb-12 text-center text-blue-700">
             Education
           </h2>
           <div className="grid md:grid-cols-1 gap-8">
             {education.map((edu, idx) => (
               <div
                 key={idx}
-                className="bg-linear-to-br from-blue-600/20 to-blue-700/20 border border-blue-500/30 rounded-lg p-8"
+                className="bg-white from-blue-600/20 to-blue-700/20 border border-blue-200 rounded-lg p-8"
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold text-blue-300 mb-2">
+                    <h3 className="text-2xl font-bold text-blue-700 mb-2">
                       {edu.degree}
                     </h3>
-                    <p className="text-lg text-gray-300 mb-1">{edu.school}</p>
-                    <p className="text-gray-400">{edu.location}</p>
+                    <p className="text-lg text-gray-600 mb-1">{edu.school}</p>
+                    <p className="text-gray-600">{edu.location}</p>
                   </div>
-                  <span className="text-sm font-semibold text-blue-300 mt-4 md:mt-0 md:whitespace-nowrap">
+                  <span className="text-sm font-semibold text-blue-700 mt-4 md:mt-0 md:whitespace-nowrap">
                     {edu.period}
                   </span>
                 </div>
@@ -211,7 +210,7 @@ export default function ProjectsPage() {
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center bg-linear-to-r from-blue-50 to-blue-100 border border-blue-300 rounded-lg p-12">
           <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-gray-600 mb-8">
             I'm always interested in hearing about new projects and
             opportunities. Feel free to reach out!
           </p>

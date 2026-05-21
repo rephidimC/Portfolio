@@ -70,7 +70,7 @@ export default function BlogPostPage() {
               <li>Use containerization for consistent deployments</li>
             </ul>
 
-            <p className="text-gray-300 leading-relaxed mt-8">
+            <p className="text-gray-600 leading-relaxed mt-8">
               By following these principles and continuously monitoring your
               application's performance, you can build systems that grow with
               your business needs.
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
           {/* CTA */}
           <div className="bg-linear-to-r from-blue-50 to-blue-100 border border-blue-300 rounded-lg p-8 mb-8">
             <h3 className="text-2xl font-bold mb-4">Want to discuss this?</h3>
-            <p className="text-gray-300 mb-6">
+            <p className="text-gray-600 mb-6">
               Have thoughts on scalability or want to share your own
               experiences? Feel free to reach out!
             </p>
@@ -106,7 +106,7 @@ export default function BlogPostPage() {
 
       {/* Footer */}
       <footer className="border-t border-blue-200 py-8 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center text-gray-400">
+        <div className="max-w-6xl mx-auto text-center text-gray-600">
           <p>
             © {new Date().getFullYear()} Victor Adeleke. All rights reserved.
           </p>
