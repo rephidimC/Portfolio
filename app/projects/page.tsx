@@ -209,9 +209,9 @@ export default function ProjectsPage() {
       {/* CTA Section */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center bg-linear-to-r from-blue-50 to-blue-100 border border-blue-300 rounded-lg p-12">
-          <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-3xl font-bold mb-4">Let&apos;s Connect</h2>
           <p className="text-xl text-gray-600 mb-8">
-            I'm always interested in hearing about new projects and
+            I&apos;m always interested in hearing about new projects and
             opportunities. Feel free to reach out!
           </p>
           <div className="flex gap-4 justify-center flex-wrap">

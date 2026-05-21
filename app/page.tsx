@@ -23,7 +23,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            I'm a full-stack software developer passionate about creating
+            I&apos;m a full-stack software developer passionate about creating
             elegant solutions to complex problems. Let me help bring your vision
             to life.
           </p>
@@ -45,17 +45,15 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-                With 5+ years of experience in web development, I've helped
+                With 5+ years of experience in web development, I&apos;ve helped
                 startups and enterprises build scalable, user-friendly
                 applications. My expertise spans across modern JavaScript
                 frameworks, cloud infrastructure, and best practices in software
                 engineering.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                I'm obsessed with writing clean, maintainable code and creating
-                delightful user experiences. When I'm not coding, you'll find me
-                exploring new technologies or contributing to open-source
-                projects.
+                I&apos;m obsessed with writing clean, maintainable code and
+                creating delightful user experiences.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -153,10 +151,10 @@ export default function Home() {
       <section className="py-20 px-6" id="contact">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Let's Create Something Amazing
+            Let&apos;s Create Something Amazing
           </h2>
           <p className="text-xl text-gray-600 mb-12">
-            Have a project in mind? Let's collaborate and build something
+            Have a project in mind? Let&apos;s collaborate and build something
             extraordinary together.
           </p>
           <div className="flex gap-6 justify-center flex-wrap">

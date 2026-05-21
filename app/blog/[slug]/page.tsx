@@ -30,16 +30,16 @@ export default function BlogPostPage() {
           <div className="prose prose-invert max-w-none mb-12">
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
               Building scalable applications is one of the most important skills
-              in modern software development. Whether you're building a startup
-              or working for an enterprise, understanding how to architect
-              systems that can handle millions of users is crucial.
+              in modern software development. Whether you&apos;re building a
+              startup or working for an enterprise, understanding how to
+              architect systems that can handle millions of users is crucial.
             </p>
 
             <h2 className="text-3xl font-bold text-blue-700 mt-10 mb-4">
               Understanding Scalability
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Scalability refers to a system's ability to handle increased
+              Scalability refers to a system&apos;s ability to handle increased
               workload. This includes not just the volume of users but also the
               complexity of operations and data processing.
             </p>
@@ -72,8 +72,8 @@ export default function BlogPostPage() {
 
             <p className="text-gray-600 leading-relaxed mt-8">
               By following these principles and continuously monitoring your
-              application's performance, you can build systems that grow with
-              your business needs.
+              application&apos;s performance, you can build systems that grow
+              with your business needs.
             </p>
           </div>
 
