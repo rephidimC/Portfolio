@@ -189,7 +189,8 @@ export default function Home() {
       <footer className="border-t border-blue-200 py-8 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center text-gray-600">
           <p>
-            © {new Date().getFullYear()} Victor Adeleke. All rights reserved.
+            © {new Date().getFullYear()} Victor Adeleke Afolayan. All rights
+            reserved.
           </p>
         </div>
       </footer>
