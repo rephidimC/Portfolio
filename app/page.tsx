@@ -58,16 +58,16 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-6">
               {[
-                { number: "Numerous", label: "Projects Completed" },
-                { number: "Countless", label: "Happy Clients" },
+                { number: "Many", label: "Projects Completed" },
+                { number: "Many", label: "Happy Clients" },
                 { number: "5+", label: "Years Experience" },
-                { number: "Forever", label: "Building" },
+                { number: "Always", label: "Building" },
               ].map((stat) => (
                 <div
                   key={stat.label}
                   className="bg-linear-to-br from-blue-500/20 to-blue-600/20 p-8 rounded-lg border border-blue-500/30 text-center"
                 >
-                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                  <div className="text-2xl font-bold text-blue-600 mb-2">
                     {stat.number}
                   </div>
                   <div className="text-gray-600">{stat.label}</div>
