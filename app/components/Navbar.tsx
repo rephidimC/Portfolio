@@ -22,6 +22,10 @@ export default function Navbar() {
       label: "Projects",
       href: "/projects",
     },
+    {
+      label: "Education",
+      href: "/education",
+    },
     // {
     //   label: "Blog",
     //   href: "/blog",
