@@ -133,7 +133,7 @@ export default function ProjectsPage() {
           <h2 className="text-4xl font-bold mb-12 text-center text-blue-700">
             Work Experience
           </h2>
-          <div className="space-y-8">
+          <div className="flex flex-col gap-8">
             {workExperience.map((job, idx) => (
               <div
                 key={idx}

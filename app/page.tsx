@@ -134,7 +134,7 @@ export default function Home() {
                 <h3 className="text-lg font-bold mb-4 text-blue-700">
                   {skillGroup.category}
                 </h3>
-                <div className="space-y-2">
+                <div className="flex flex-col gap-2">
                   {skillGroup.items.map((skill) => (
                     <div key={skill} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-linear-to-r from-blue-400 to-blue-600 rounded-full" />

@@ -47,7 +47,7 @@ export default function BlogPostPage() {
             <h2 className="text-3xl font-bold text-blue-300 mt-10 mb-4">
               Key Considerations
             </h2>
-            <ul className="list-disc list-inside space-y-3 text-gray-600 mb-6">
+            <ul className="list-disc list-inside flex flex-col gap-3 text-gray-600 mb-6">
               <li>Database optimization and indexing</li>
               <li>Caching strategies and CDN usage</li>
               <li>Load balancing and horizontal scaling</li>
@@ -62,7 +62,7 @@ export default function BlogPostPage() {
               Follow these practices to ensure your application scales
               effectively:
             </p>
-            <ul className="list-disc list-inside space-y-3 text-gray-600 mb-6">
+            <ul className="list-disc list-inside flex flex-col gap-3 text-gray-600 mb-6">
               <li>Monitor performance metrics continuously</li>
               <li>Use automated testing to catch issues early</li>
               <li>Implement proper logging and observability</li>

@@ -64,7 +64,7 @@ export default function BlogPage() {
 
       {/* Blog Posts */}
       <section className="py-12 px-6">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto flex flex-col gap-8">
           {blogPosts.map((post) => (
             <article
               key={post.id}
